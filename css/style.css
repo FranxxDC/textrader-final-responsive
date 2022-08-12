@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*General*/
+a{
+    text-decoration: none;
+}
+
+
+/*-------------------------------*/
+.encabezado{
+    width: 100%;
+    height: 100px;
+    background-color: #395B64;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: 'Cormorant SC', serif;
+    color: white;
+    font-weight: 100;
+    
+}
+.listas{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.listas ul{ 
+    list-style: none;
+    display: flex;
+}
+.listas ul li{
+    margin: 10px 30px;
+}
+.listas ul li a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+/* check para responsive usando solo css */
+#check{
+    display: none;
+}
+.mostrar-menu, .cerrar-menu{
+    display: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.cerrar-menu{
+    color: #000000;
+    
+}
+
+/* header de imagenes*/
+
+.slider{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+.contenedor-slider{
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
+.contenedor-slider ul{
+    display: flex;
+    width: 400%;
+    list-style: none;
+    animation: cambio 20s infinite alternate;
+    -webkit-animation: cambio 20s infinite alternate;
+}
+.contenedor-slider ul li{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-slider ul li img{
+    width: 100%;
+}
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    55%{margin-left: -200%;}
+    65%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    85%{margin-left: -300%;}
+    
+}
+
+/* imagenes fixed*/
+
+.imagen{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    background:linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../img/town-2430571_1280.jpg)  center center fixed;
+}
+.contenedor-imagen{
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+}
+.contenedor-imagen h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    align-self: center;
+}
+
+/*categoriass */
+.categoria{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.texto-categ{
+    text-align: center;
+}
+.texto-categ h1{
+    align-self: center;
+    font-size: 50px;
+}
+.caja-categ{
+    margin-top: 50px;
+    width: 100%;
+}
+.contenedor-caja{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.caja-categ .caja{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 25px 25px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.caja-categ .caja img{
+    width: 100%;
+    height: 80%;
+}
+.caja-categ .caja h1{
+    text-align: center;
+    height: 20%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* sobre nosotros */
+.caja-sobrenosotros{
+    margin-top: 100px;
+    width: 100%;
+    padding: 70px 0;
+    color: white;
+    background:linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../img/imagen2.jpeg),  no-repeat;
+}
+.contenedor-sobre{
+    max-width: 1200px;
+    margin: auto;
+}
+.titulo-sobre h1{
+    font-size: 50px;
+    text-align: center;
+}
+.contenedor-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen-sobre ,.texto-sobre{
+    padding: 10px 15px;
+    width: 50%;
+    align-self: center;
+}
+.imagen-sobre img{
+    width: 100%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.texto-sobre{
+    align-self: center;
+}
+.texto-sobre p{
+    text-align: center;
+    font-size:30px;
+}
+/*mision y vision*/
+
+
+
+
+.mision-vision{
+    margin-top: 20px;
+    width: 100%;
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),url(../img/pexel.jpg) center center no-repeat fixed;
+    background-size: cover;
+    color: white;
+    
+}
+.contenedor-mision-vision{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+.caja-mision , .caja-vision{
+    width: 45%;
+    margin: 20px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.let-misi{
+    text-align: center;
+    font-size: 60px;
+}
+.tex-misio{
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* formulario*/
+:focus{
+    outline: none;
+}
+.formulario{
+
+    /*para que se aleje un poco de su hermano ; el de arriba*/
+    margin-top: 30px;
+
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.contenedor-box-form{
+    /*contenedor para que si la pantalla es mas grande las cajas o el contenido no se disperse ; quedara centrado*/
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.caja-form-conteiner{
+    max-width: 55%;
+    
+}
+.caja-llamadas-correo{
+    max-width: 35%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.caja-form-conteiner , .caja-llamadas-correo{
+    padding: 20px 0;
+    
+
+    
+}
+.caja-form-conteiner h1{
+    text-align: center;
+    height: 10%;
+}
+.caja-form-conteiner h1, .caja-llamadas-correo h1{
+    font-size: 50px;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-nombre, 
+.form-apellido,
+.form-correo,
+.form-tele{
+    max-width: 45%;
+    height: 50px;
+    margin: 10px 10px;
+}
+.form-nombre input, 
+.form-apellido input,
+.form-correo input,
+.form-tele input{
+    width: 100%;
+
+    background: none;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+
+    letter-spacing: 2px;
+    
+    color: #575555;
+    height: 100%;
+}
+.form-textarea{
+    margin-top: 10px;
+    width: 95%;
+    padding: 15px;
+    min-height: 200px ;
+}
+.form-textarea textarea,
+.submit input,
+.form-nombre input, 
+.form-apellido input,
+.form-correo input,
+.form-tele input{
+    font-size: 25px;
+}
+
+
+.form-textarea textarea{
+    letter-spacing: 2px;
+    
+    
+    color: #575555;
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+.submit {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    
+    margin-top: 30px;
+}
+.submit input{
+    border: none;
+    background: none;
+    background-color: sandybrown;
+
+
+    padding: 15px 35px;
+}
+
+
+.caja-llamadas-correo h1{
+    margin-bottom: 20px;
+}
+.caja-llamadas-correo ul{
+    list-style: none;
+    max-width: 100%;
+}
+.caja-llamadas-correo  li{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.iconos .lni{
+    font-size: 60px;
+    color: black;
+    margin: 20px 5px;
+}
+
+
+
